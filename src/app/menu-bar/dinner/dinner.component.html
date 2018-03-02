@@ -1,7 +1,14 @@
-<p>
-  dinner works!
-</p>
 
-<div *ngFor="let dinner of dinners">
-  {{breakfastItem.name}}
+<br>
+<div *ngFor="let dinnerItem of dinnerItems">
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{dinnerItem.name}}</h5>
+          <p class="card-text">{{dinnerItem.description}}</p>
+          <p class="card-text">${{dinnerItem.price}}</p>
+          <div class="float-right">float right</div>
+          <button class="btn btn-primary">Add to cart</button>
+          <hr>
+        </div>
+    </div>
 </div>

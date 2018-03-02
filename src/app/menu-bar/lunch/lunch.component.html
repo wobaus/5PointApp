@@ -1,3 +1,14 @@
-<p>
-  lunch works!
-</p>
+
+<br>
+<div *ngFor="let lunchItem of lunchItems">
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{lunchItem.name}}</h5>
+          <p class="card-text">{{lunchItem.description}}</p>
+          <p class="card-text">${{lunchItem.price}}</p>
+          <div class="float-right">float right</div>
+          <button class="btn btn-primary">Add to cart</button>
+          <hr>
+        </div>
+    </div>
+</div>

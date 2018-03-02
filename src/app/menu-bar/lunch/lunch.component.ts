@@ -1,3 +1,4 @@
+import { MENU_ITEMS } from './../../shared/mock-menu-item';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lunch.component.css']
 })
 export class LunchComponent implements OnInit {
+  lunchItems = MENU_ITEMS.filter(item => item.type === 'lunch');
 
   constructor() { }
 

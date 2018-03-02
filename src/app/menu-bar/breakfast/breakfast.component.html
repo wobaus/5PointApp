@@ -1,19 +1,14 @@
 
-<hr>
+<br>
 <div *ngFor="let breakfastItem of breakfastItems">
     <div class="card">
-
-
-            <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
-                <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height 100%</div>
-              </div>
-         
-
-        <div class="card-body">
           <h5 class="card-title">{{breakfastItem.name}}</h5>
           <p class="card-text">{{breakfastItem.description}}</p>
+          <p class="card-text">${{breakfastItem.price}}</p>
+          <div class="float-right">float right</div>
           <button class="btn btn-primary">Add to cart</button>
-        </div>
+          <hr>
     </div>
 </div>
+
 

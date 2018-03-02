@@ -1,3 +1,4 @@
+import { MENU_ITEMS } from './../../shared/mock-menu-item';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dinner.component.css']
 })
 export class DinnerComponent implements OnInit {
-
+  dinnerItems = MENU_ITEMS.filter(item => item.type === 'dinner');
   constructor() { }
 
   ngOnInit() {
