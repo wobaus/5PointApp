@@ -1,14 +1,34 @@
-  <div class="row">
-    <div class="col-sm-8">
-      <a href="/"><h3> Order Form </h3>    </a>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+          
+          <a href="/"><h3> Order Form </h3>    </a>
+            <!-- Try to make button float to the right -->
+            <div class="float-right">
+                    <button type="button" class="btn btn-dark">Cart</button> 
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>       
+            </div>
+        </div>
     </div>
-    <div class="col-sm-2">
-     <button class="btn btn-primary">Cart</button> 
+    
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <ul class="nav nav-tabs">
+            <!-- will use routerLink rather href, instead of reloading,   -->
+            <!-- routerLinkActiveOptions -- will direct exact link rather all 'empty' path -->
+            <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions] = "{exact: true}"><a routerLink="/breakfast">Breakfast</a></li>
+            <li role="presentation"routerLinkActive="active" ><a routerLink="/lunch">Lunch</a></li>
+            <!-- routerLink also can use property binding -->
+            <li role="presentation" routerLinkActive="active" ><a [routerLink]="['/dinner']">Dinner</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="col-sm-2">
-      <button class="btn btn-primary">Check Out</button> 
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <router-outlet></router-outlet>
+      </div>
     </div>
 
   </div>
-
-
+    
