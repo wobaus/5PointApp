@@ -6,3 +6,29 @@
 <div *ngFor="let breakfastItem of breakfastItems">
   {{breakfastItem.name}}
 </div>
+
+<div *ngFor="let breakfastItem of breakfastItems">
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{breakfastItem.name}}</h5>
+          <p class="card-text">{{breakfastItem.description}}</p>
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+    </div>
+  <!-- <div class="card-body">
+    <div class="card-title">
+        {{breakfastItem.name}}
+    </div>
+    
+    <div class="card-subtitle">
+      {{breakfastItem.description}}
+    </div>
+  </div> -->
+  <!-- <div class="col-8">
+    <div>
+    {{breakfastItem.price}}
+    <button class="btn btn-primary">Add</button>
+    </div>
+  </div> -->
+</div>
+
