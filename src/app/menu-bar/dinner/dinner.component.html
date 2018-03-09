@@ -1,14 +1,17 @@
-
 <br>
 <div *ngFor="let dinnerItem of dinnerItems">
-    <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">{{dinnerItem.name}}</h5>
-          <p class="card-text">{{dinnerItem.description}}</p>
-          <p class="card-text">${{dinnerItem.price}}</p>
-          <div class="float-right">float right</div>
-          <button class="btn btn-primary">Add to cart</button>
-          <hr>
-        </div>
-    </div>
+<div class="media">
+  <div class="media-left">
+    <img src="img_avatar1.png" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{dinnerItem.name}}</h4>
+    <p>{{dinnerItem.description}}</p>
+  </div>
+  <div class="media-right">
+    <button class="btn btn-primary">Add to cart</button>
+  </div>
+</div>
+<br>
+<hr>
 </div>

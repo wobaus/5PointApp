@@ -1,13 +1,15 @@
 <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-              
+              <br>
                 <div class="row">
                     <app-header></app-header>
                 </div>
+                <br>
                 <div class="row">
                     <router-outlet></router-outlet>    
                 </div>
+                <br>
                 <div class="row">
                     <app-menu-list></app-menu-list>  
                 </div>
@@ -15,4 +17,35 @@
         </div>
 </div>
 
+<div class="input-group spinner">
+    <input type="text" class="form-control" value="42">
+    <div class="input-group-btn-vertical">
+      <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+      <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+    </div>
+  </div>
+  
 
+<!-- wufoo api -->
+
+<div id="wufoo-zpq9tz40q8isq7">
+        Fill out my <a href="https://wdfeujyc.wufoo.com/forms/zpq9tz40q8isq7">online form</a>.
+        </div>
+        <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+        <script type="text/javascript">var zpq9tz40q8isq7;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'wdfeujyc',
+        'formHash':'zpq9tz40q8isq7',
+        'autoResize':true,
+        'height':'657',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { zpq9tz40q8isq7 = new WufooForm();zpq9tz40q8isq7.initialize(options);zpq9tz40q8isq7.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');</script>
+        
