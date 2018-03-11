@@ -1,0 +1,21 @@
+<br>
+<div *ngFor="let cartItem of carts">
+<div class="media">
+  <div class="media-left">
+    <img src="img_avatar1.png" class="media-object" style="width:100px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{cartItem.name}}</h4>
+        <p>{{cartItem.description}}</p>
+    
+
+  </div>
+  <div class="media-right">
+      <p>${{cartItem.price}}</p>
+    <button class="btn btn-danger" (click)="removeItem()">Remove</button>
+  </div>
+</div>
+<br>
+<hr>
+</div>
+

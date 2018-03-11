@@ -6,7 +6,6 @@ export const MENU_ITEMS: MenuItem [] = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         price: 10,
         type: 'breakfast'
-        image: 'BreakfastBurrito'
     },
     {
         id: 2,

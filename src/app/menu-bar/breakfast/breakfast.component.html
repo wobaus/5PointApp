@@ -2,14 +2,17 @@
 <div *ngFor="let breakfastItem of breakfastItems">
 <div class="media">
   <div class="media-left">
-    <img src="img_avatar1.png" class="media-object" style="width:60px">
+    <img src="img_avatar1.png" class="media-object" style="width:100px">
   </div>
   <div class="media-body">
     <h4 class="media-heading">{{breakfastItem.name}}</h4>
-    <p>{{breakfastItem.description}}</p>
+        <p>{{breakfastItem.description}}</p>
+    
+
   </div>
   <div class="media-right">
-    <button class="btn btn-primary">Add to cart</button>
+      <p>${{breakfastItem.price}}</p>
+    <button class="btn btn-primary" (click)="onAddItem(breackfastItem)">Add to cart</button>
   </div>
 </div>
 <br>
