@@ -14,9 +14,8 @@ export class BreakfastComponent implements OnInit {
   // get breakfast menus from mock-menu-itmes and pass to temp to display
   breakfastItems = MENU_ITEMS.filter(item => item.type === 'breakfast');
   // carts: {name: string, description: string, price: number}[] = [];
-  constructor(private cartItems: CartItems) {
+  constructor(private cartItems: CartItems) {}
 
-    }
   ngOnInit() {
   }
 

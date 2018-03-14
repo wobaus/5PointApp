@@ -1,31 +1,44 @@
-<<<<<<< HEAD
-# Order
+# 5 Point App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+A Restaurant order form
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. A user broswer restaurant's menu and select and view total (in progres)
+2. A user log in to save selected menu for convinience of saving data and     view order history.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installing
+For test : clon repo
+           $npm install
+           $npm install --save bootstrap
+                check )) node_modules > bootstrap > dist > css > bootstrap.css
+                add ) under .angular-cli.json > 
+                "styles": [
+                    "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+                    "styles.css"
+                ],
 
-## Build
+                then, import on css file
+           $ng serve     
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Built With
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Angular 5 : framework
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# orderform
->>>>>>> e9df3391e2a692372edd497601802d6af5780464
+## Authors
+
+* **Sunmi Bausmann** - *Initial work* - [PurpleBooth](https://github.com/wobaus)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+
+## Acknowledgments
+
+* Thanks to
+
