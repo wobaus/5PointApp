@@ -1,21 +1,30 @@
 <br>
-<div *ngFor="let breakfastItem of breakfastItems">
+<div  class="list-group-item clearfix" *ngFor="let breakfastItem of breakfastItems">
 <div class="media">
   <div class="media-left">
-    <img src="img_avatar1.png" class="media-object" style="width:100px">
+    <!-- <img 
+    src="{{ breakfastItem.imagepath}}" 
+    [src] = "breakfastItem.imagepath"  // or can use properity binding
+    alt="{{ breakfastItem.name }}"
+    class="media-object" > -->
+    <img src="#">
   </div>
   <div class="media-body">
     <h4 class="media-heading">{{breakfastItem.name}}</h4>
         <p>{{breakfastItem.description}}</p>
-    
-
   </div>
+
   <div class="media-right">
       <p>${{breakfastItem.price}}</p>
-    <button class="btn btn-primary" (click)="onAddItem(breackfastItem)">Add to cart</button>
+      <label for="amount">Amount</label>
+    <input type="number" id="amount" class="form-control">
+    <button class="btn btn-primary" (click)="onAddItem(breakfastItem)"  >Add to cart</button>
   </div>
+ 
 </div>
-<br>
-<hr>
+<div class="row">
+  <div class="col-sm-12" *ngFor = "let selectMenu of selectMenus" >
+    <p>{{ selectMenu.name}}</p>
+  </div>
 </div>
 
